@@ -1,0 +1,399 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 AppleColorEmoji;
+}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue10;\red16\green128\blue128;\red110\green0\blue2;
+\red0\green0\blue163;\red0\green0\blue0;\red215\green214\blue68;}
+{\*\expandedcolortbl;;\cssrgb\c99942\c98555\c0;\cssrgb\c0\c56905\c57462\c86688;\cssrgb\c51436\c0\c0;
+\cssrgb\c570\c140\c70139;\csgray\c0;\cssrgb\c87275\c85964\c33465;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \CocoaLigature0 Last login: Sat May  7 10:03:52 on ttys002\
+(base) mojo_flat@Morgans-MBP phase1_project_data % ls\
+README.md		data			first_notebook.ipynb\
+(base) mojo_flat@Morgans-MBP phase1_project_data % cd data\
+(base) mojo_flat@Morgans-MBP data % ls\
+bom.movie_gross.csv.gz	rt.movie_info.tsv.gz	tmdb.movies.csv.gz\
+im.db.zip		rt.reviews.tsv.gz	tn.movie_budgets.csv.gz\
+(base) mojo_flat@Morgans-MBP data % cd ..\
+(base) mojo_flat@Morgans-MBP phase1_project_data % ls\
+README.md		data			first_notebook.ipynb\
+(base) mojo_flat@Morgans-MBP phase1_project_data % git clone https://raw.githubusercontent.com/mojo-flat/dsc-phase-1-project-v2-4/master/README.md\
+fatal: destination path 'README.md' already exists and is not an empty directory.\
+(base) mojo_flat@Morgans-MBP phase1_project_data % mv README.md README_0.md\
+(base) mojo_flat@Morgans-MBP phase1_project_data % git clone https://raw.githubusercontent.com/mojo-flat/dsc-phase-1-project-v2-4/master/README.md\
+Cloning into 'README.md'...\
+remote: 404: Not Found\
+fatal: repository 'https://raw.githubusercontent.com/mojo-flat/dsc-phase-1-project-v2-4/master/README.md/' not found\
+(base) mojo_flat@Morgans-MBP phase1_project_data % atom\
+zsh: command not found: atom\
+(base) mojo_flat@Morgans-MBP phase1_project_data % atom\
+(base) mojo_flat@Morgans-MBP phase1_project_data % sudo apt-get install unzip\
+Password:\
+sudo: apt-get: command not found\
+(base) mojo_flat@Morgans-MBP phase1_project_data % cd data\
+(base) mojo_flat@Morgans-MBP data % unzip im.db.zip -d data\
+Archive:  im.db.zip\
+  inflating: data/im.db              \
+(base) mojo_flat@Morgans-MBP data % ls\
+bom.movie_gross.csv.gz	rt.movie_info.tsv.gz	tn.movie_budgets.csv.gz\
+data			rt.reviews.tsv.gz\
+im.db.zip		tmdb.movies.csv.gz\
+(base) mojo_flat@Morgans-MBP data % cd data\
+(base) mojo_flat@Morgans-MBP data % ls\
+im.db\
+(base) mojo_flat@Morgans-MBP data % cd ..\
+(base) mojo_flat@Morgans-MBP data % rm -r data\
+(base) mojo_flat@Morgans-MBP data % ls\
+bom.movie_gross.csv.gz	rt.movie_info.tsv.gz	tmdb.movies.csv.gz\
+im.db.zip		rt.reviews.tsv.gz	tn.movie_budgets.csv.gz\
+(base) mojo_flat@Morgans-MBP data % unzip im.db.zip        \
+Archive:  im.db.zip\
+  inflating: im.db                   \
+(base) mojo_flat@Morgans-MBP data % ls\
+bom.movie_gross.csv.gz	rt.movie_info.tsv.gz	tn.movie_budgets.csv.gz\
+im.db			rt.reviews.tsv.gz\
+im.db.zip		tmdb.movies.csv.gz\
+(base) mojo_flat@Morgans-MBP data % git status\
+On branch main\
+Your branch is up to date with 'origin/main'.\
+\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   ../.DS_Store\cf2 \
+	\cf4 modified:   ../.ipynb_checkpoints/first_notebook-checkpoint.ipynb\cf2 \
+	\cf4 deleted:    ../README.md\cf2 \
+	\cf4 modified:   ../first_notebook.ipynb\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 ../README_0.md\cf2 \
+	\cf4 im.db\cf2 \
+	\cf4 ../im.db\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+(base) mojo_flat@Morgans-MBP data % git add .\
+(base) mojo_flat@Morgans-MBP data % git commit -m "imported datasets"\
+[main 0531dd7] imported datasets\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 data/im.db\
+(base) mojo_flat@Morgans-MBP data % git push origin\
+Username for 'https://github.com': mojo-flat\
+Password for 'https://mojo-flat@github.com': \
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\
+fatal: Authentication failed for 'https://github.com/mojo-flat/phase1_project_data.git/'\
+(base) mojo_flat@Morgans-MBP data % brew install git-lfs\
+\cf5 ==>\cf2  
+\f1\b \cf6 Auto-updated Homebrew!
+\f0\b0 \cf2 \
+Updated 1 tap (homebrew/core).\
+\cf5 ==>\cf2  
+\f1\b \cf6 Updated Formulae
+\f0\b0 \cf2 \
+Updated 162 formulae.\
+\
+\cf5 ==>\cf2  
+\f1\b \cf6 Downloading https://ghcr.io/v2/homebrew/core/git-lfs/manifests/3.1.4
+\f0\b0 \cf2 \
+######################################################################## 100.0%\
+\cf5 ==>\cf2  
+\f1\b \cf6 Downloading https://ghcr.io/v2/homebrew/core/git-lfs/blobs/sha256:7f7742c44c
+\f0\b0 \cf2 \
+\cf5 ==>\cf2  
+\f1\b \cf6 Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+\f0\b0 \cf2 \
+######################################################################## 100.0%\
+\cf5 ==>\cf2  
+\f1\b \cf6 Pouring git-lfs--3.1.4.arm64_monterey.bottle.tar.gz
+\f0\b0 \cf2 \
+\cf5 ==>\cf2  
+\f1\b \cf6 Caveats
+\f0\b0 \cf2 \
+Update your git config to finish installation:\
+\
+  # Update global git config\
+  $ git lfs install\
+\
+  # Update system git config\
+  $ git lfs install --system\
+\cf5 ==>\cf2  
+\f1\b \cf6 Summary
+\f0\b0 \cf2 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /opt/homebrew/Cellar/git-lfs/3.1.4: 69 files, 11.3MB\
+\cf5 ==>\cf2  
+\f1\b \cf6 Running `brew cleanup git-lfs`...
+\f0\b0 \cf2 \
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.\
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\
+(base) mojo_flat@Morgans-MBP data % git lfs track "*.db"\
+Tracking "*.db"\
+(base) mojo_flat@Morgans-MBP data % git add .gitattributes\
+(base) mojo_flat@Morgans-MBP data % git push origin\
+Enumerating objects: 15, done.\
+Counting objects: 100% (15/15), done.\
+Delta compression using up to 10 threads\
+Compressing objects: 100% (9/9), done.\
+Writing objects: 100% (10/10), 64.04 MiB | 6.34 MiB/s, done.\
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : Trace: 60a3b76b5ac040850ef0d8022d699d8d0307f8c17a2f349e1d98db6220dd30c5\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : See http://git.io/iEPt8g for more information.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : File data/im.db is 161.59 MB; this exceeds GitHub's file size limit of 100.00 MB\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [remote rejected]\cf2  main -> main (pre-receive hook declined)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+(base) mojo_flat@Morgans-MBP data % git add im.db\
+(base) mojo_flat@Morgans-MBP data % git commit -m "added db file"\
+[main 15d56d4] added db file\
+ 2 files changed, 1 insertion(+)\
+ create mode 100644 data/.gitattributes\
+ rewrite data/im.db (99%)\
+(base) mojo_flat@Morgans-MBP data % git push origin\
+Uploading LFS objects: 100% (1/1), 169 MB | 11 MB/s, done.                      \
+Enumerating objects: 20, done.\
+Counting objects: 100% (20/20), done.\
+Delta compression using up to 10 threads\
+Compressing objects: 100% (13/13), done.\
+Writing objects: 100% (15/15), 64.04 MiB | 6.53 MiB/s, done.\
+Total 15 (delta 5), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : Trace: 6a4704fe5ceb5a6e032e8c0b11022476fa7d88d0172fa5dfd6fc3d3b1dd54057\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : See http://git.io/iEPt8g for more information.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : File data/im.db is 161.59 MB; this exceeds GitHub's file size limit of 100.00 MB\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [remote rejected]\cf2  main -> main (pre-receive hook declined)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+(base) mojo_flat@Morgans-MBP data % git push origin main\
+Enumerating objects: 20, done./1), 169 MB | 0 B/s                               \
+Counting objects: 100% (20/20), done.\
+Delta compression using up to 10 threads\
+Compressing objects: 100% (13/13), done.\
+Writing objects: 100% (15/15), 64.04 MiB | 5.80 MiB/s, done.\
+Total 15 (delta 5), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : Trace: d484763084cb17f36b574c03fcabe4d9d47f98efb4d67a8714603811164d372e\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : See http://git.io/iEPt8g for more information.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : File data/im.db is 161.59 MB; this exceeds GitHub's file size limit of 100.00 MB\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [remote rejected]\cf2  main -> main (pre-receive hook declined)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+(base) mojo_flat@Morgans-MBP data % git lfs install\
+Updated Git hooks.\
+Git LFS initialized.\
+(base) mojo_flat@Morgans-MBP data % git add im.db\
+(base) mojo_flat@Morgans-MBP data % git commit -m "imported datasets"\
+On branch main\
+Your branch is ahead of 'origin/main' by 3 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+(base) mojo_flat@Morgans-MBP data % git push    \
+Enumerating objects: 20, done./1), 169 MB | 0 B/s                               \
+Counting objects: 100% (20/20), done.\
+Delta compression using up to 10 threads\
+Compressing objects: 100% (13/13), done.\
+Writing objects: 100% (15/15), 64.04 MiB | 6.25 MiB/s, done.\
+Total 15 (delta 5), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : Trace: 20f821070e255f38673a70519d2dce2062ece915f18aa9fabd573a5742d90fbc\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : See http://git.io/iEPt8g for more information.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : File data/im.db is 161.59 MB; this exceeds GitHub's file size limit of 100.00 MB\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [remote rejected]\cf2  main -> main (pre-receive hook declined)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+(base) mojo_flat@Morgans-MBP data % git lfs track "*.db"\
+"*.db" already supported\
+(base) mojo_flat@Morgans-MBP data % git add .gitattributes\
+(base) mojo_flat@Morgans-MBP data % git add im.db\
+(base) mojo_flat@Morgans-MBP data % git commit -m "added data"\
+On branch main\
+Your branch is ahead of 'origin/main' by 3 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+(base) mojo_flat@Morgans-MBP data % git push origin main\
+Uploading LFS objects: 100% (1/1), 169 MB | 0 B/s, done.                        \
+Enumerating objects: 20, done.\
+Counting objects: 100% (20/20), done.\
+Delta compression using up to 10 threads\
+Compressing objects: 100% (13/13), done.\
+Writing objects: 100% (15/15), 64.04 MiB | 6.19 MiB/s, done.\
+Total 15 (delta 5), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : Trace: 2589d85b2dfd4b8b84cd0fc74d018daed8d2b7fe7994aed4e3366692a14a0d19\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : See http://git.io/iEPt8g for more information.\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : File data/im.db is 161.59 MB; this exceeds GitHub's file size limit of 100.00 MB\
+remote: 
+\f1\b \cf4 error
+\f0\b0 \cf2 : GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [remote rejected]\cf2  main -> main (pre-receive hook declined)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+(base) mojo_flat@Morgans-MBP data % git lfs migrate import --everything --include="im.db"    \
+migrate: Sorting commits: ..., done.                                            \
+migrate: Rewriting commits: 100% (8/8), done.                                   \
+  main	15d56d47e87b196dcb77f9d964591a513f33c267 -> d2ca793d0137fea06f9d084c92fc180e1aab40c3\
+migrate: Updating refs: ..., done.                                              \
+migrate: checkout: ..., done.                                                   \
+(base) mojo_flat@Morgans-MBP data % git add .\
+(base) mojo_flat@Morgans-MBP data % git commit -m "imported data"\
+On branch main\
+Your branch and 'origin/main' have diverged,\
+and have 8 and 5 different commits each, respectively.\
+  (use "git pull" to merge the remote branch into yours)\
+\
+nothing to commit, working tree clean\
+(base) mojo_flat@Morgans-MBP data % git pull \
+\cf7 hint: You have divergent branches and need to specify how to reconcile them.\cf2 \
+\cf7 hint: You can do so by running one of the following commands sometime before\cf2 \
+\cf7 hint: your next pull:\cf2 \
+\cf7 hint: \cf2 \
+\cf7 hint:   git config pull.rebase false  # merge\cf2 \
+\cf7 hint:   git config pull.rebase true   # rebase\cf2 \
+\cf7 hint:   git config pull.ff only       # fast-forward only\cf2 \
+\cf7 hint: \cf2 \
+\cf7 hint: You can replace "git config" with "git config --global" to set a default\cf2 \
+\cf7 hint: preference for all repositories. You can also pass --rebase, --no-rebase,\cf2 \
+\cf7 hint: or --ff-only on the command line to override the configured default per\cf2 \
+\cf7 hint: invocation.\cf2 \
+fatal: Need to specify how to reconcile divergent branches.\
+(base) mojo_flat@Morgans-MBP data % git push  \
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [rejected]       \cf2  main -> main (non-fast-forward)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+\cf7 hint: Updates were rejected because the tip of your current branch is behind\cf2 \
+\cf7 hint: its remote counterpart. Integrate the remote changes (e.g.\cf2 \
+\cf7 hint: 'git pull ...') before pushing again.\cf2 \
+\cf7 hint: See the 'Note about fast-forwards' in 'git push --help' for details.\cf2 \
+(base) mojo_flat@Morgans-MBP data % git push origin main\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [rejected]       \cf2  main -> main (non-fast-forward)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+\cf7 hint: Updates were rejected because the tip of your current branch is behind\cf2 \
+\cf7 hint: its remote counterpart. Integrate the remote changes (e.g.\cf2 \
+\cf7 hint: 'git pull ...') before pushing again.\cf2 \
+\cf7 hint: See the 'Note about fast-forwards' in 'git push --help' for details.\cf2 \
+(base) mojo_flat@Morgans-MBP data % git pull main  \
+fatal: 'main' does not appear to be a git repository\
+fatal: Could not read from remote repository.\
+\
+Please make sure you have the correct access rights\
+and the repository exists.\
+(base) mojo_flat@Morgans-MBP data % git pull origin\
+\cf7 hint: You have divergent branches and need to specify how to reconcile them.\cf2 \
+\cf7 hint: You can do so by running one of the following commands sometime before\cf2 \
+\cf7 hint: your next pull:\cf2 \
+\cf7 hint: \cf2 \
+\cf7 hint:   git config pull.rebase false  # merge\cf2 \
+\cf7 hint:   git config pull.rebase true   # rebase\cf2 \
+\cf7 hint:   git config pull.ff only       # fast-forward only\cf2 \
+\cf7 hint: \cf2 \
+\cf7 hint: You can replace "git config" with "git config --global" to set a default\cf2 \
+\cf7 hint: preference for all repositories. You can also pass --rebase, --no-rebase,\cf2 \
+\cf7 hint: or --ff-only on the command line to override the configured default per\cf2 \
+\cf7 hint: invocation.\cf2 \
+fatal: Need to specify how to reconcile divergent branches.\
+(base) mojo_flat@Morgans-MBP data % git config pull.rebase false\
+(base) mojo_flat@Morgans-MBP data % git push origin main\
+To https://github.com/mojo-flat/phase1_project_data.git\
+ \cf4 ! [rejected]       \cf2  main -> main (non-fast-forward)\
+\cf4 error: failed to push some refs to 'https://github.com/mojo-flat/phase1_project_data.git'\cf2 \
+\cf7 hint: Updates were rejected because the tip of your current branch is behind\cf2 \
+\cf7 hint: its remote counterpart. Integrate the remote changes (e.g.\cf2 \
+\cf7 hint: 'git pull ...') before pushing again.\cf2 \
+\cf7 hint: See the 'Note about fast-forwards' in 'git push --help' for details.\cf2 \
+(base) mojo_flat@Morgans-MBP data % git add .\
+(base) mojo_flat@Morgans-MBP data % git commit -m "import data"\
+On branch main\
+Your branch and 'origin/main' have diverged,\
+and have 8 and 5 different commits each, respectively.\
+  (use "git pull" to merge the remote branch into yours)\
+\
+nothing to commit, working tree clean\
+(base) mojo_flat@Morgans-MBP data % git pull origin\
+fatal: refusing to merge unrelated histories\
+(base) mojo_flat@Morgans-MBP data % git pull origin main --allow-unrelated-histories\
+From https://github.com/mojo-flat/phase1_project_data\
+ * branch            main       -> FETCH_HEAD\
+warning: Cannot merge binary files: .DS_Store (HEAD vs. 82bd245b0682e2fe9d6acc2568030c8c022961a6)\
+Auto-merging .DS_Store\
+CONFLICT (add/add): Merge conflict in .DS_Store\
+Auto-merging .ipynb_checkpoints/first_notebook-checkpoint.ipynb\
+CONFLICT (add/add): Merge conflict in .ipynb_checkpoints/first_notebook-checkpoint.ipynb\
+Auto-merging first_notebook.ipynb\
+CONFLICT (add/add): Merge conflict in first_notebook.ipynb\
+Automatic merge failed; fix conflicts and then commit the result.\
+(base) mojo_flat@Morgans-MBP data % git pull origin main --allow-unrelated-histories\
+error: Pulling is not possible because you have unmerged files.\
+\cf7 hint: Fix them up in the work tree, and then use 'git add/rm <file>'\cf2 \
+\cf7 hint: as appropriate to mark resolution and make a commit.\cf2 \
+fatal: Exiting because of an unresolved conflict.\
+(base) mojo_flat@Morgans-MBP data % git pull origin main --allow-unrelated-histories\
+From https://github.com/mojo-flat/phase1_project_data\
+ * branch            main       -> FETCH_HEAD\
+Already up to date.\
+(base) mojo_flat@Morgans-MBP data % git add .\
+(base) mojo_flat@Morgans-MBP data % git commit -m "import important data"\
+On branch main\
+Your branch is ahead of 'origin/main' by 9 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+(base) mojo_flat@Morgans-MBP data % git push origin main\
+Uploading LFS objects: 100% (1/1), 169 MB | 0 B/s, done.                        \
+Enumerating objects: 36, done.\
+Counting objects: 100% (36/36), done.\
+Delta compression using up to 10 threads\
+Compressing objects: 100% (28/28), done.\
+Writing objects: 100% (31/31), 8.07 KiB | 4.03 MiB/s, done.\
+Total 31 (delta 12), reused 1 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (12/12), completed with 3 local objects.\
+To https://github.com/mojo-flat/phase1_project_data.git\
+   82bd245..4006691  main -> main\
+}
